@@ -1,0 +1,7 @@
+{
+    "compilersOptions": {
+        "target": "es5",
+        "module": "es6",
+        "outDir": "./dist"
+    }
+}
