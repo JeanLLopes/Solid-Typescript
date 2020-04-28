@@ -1,9 +1,9 @@
-import AbstractSharedbutton from './AbstractSharedButton';
+import AbstractLinkShareButton from './AbstractLinkShareButton';
 
-export default class SharedButtonLinkedin extends AbstractSharedbutton {
+export default class SharedButtonLinkedin extends AbstractLinkShareButton {
 
     constructor(url: string, className: string) {
-        super(url, className)
+        super(className, url)
     }
 
     createLink(): string {
