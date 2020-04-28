@@ -2,15 +2,18 @@ import SharedButtonFacebook from './SharedButtonFacebook';
 import SharedButtonLinkedin from './SharedButtonLinkedin';
 import SharedButtonTwitter from './SharedButtonTwitter';
 import SharedButtonPrint from './SharedButtonPrint';
+import DomEventHandler from './DomEventHandler';
 
-const facebook = new SharedButtonFacebook("https://www.youtube.com", ".btn-facebook");
+const eventHandler = new DomEventHandler()
+
+const facebook = new SharedButtonFacebook(eventHandler, "https://www.youtube.com", ".btn-facebook");
 facebook.bind();
 
-const twitter = new SharedButtonTwitter("https://www.youtube.com", ".btn-twitter");
+const twitter = new SharedButtonTwitter(eventHandler, "https://www.youtube.com", ".btn-twitter");
 twitter.bind();
 
-const linkedin = new SharedButtonLinkedin("https://www.youtube.com", ".btn-linkedin");
+const linkedin = new SharedButtonLinkedin(eventHandler, "https://www.youtube.com", ".btn-linkedin");
 linkedin.bind();
 
-const print = new SharedButtonPrint(".btn-print");
+const print = new SharedButtonPrint(eventHandler, ".btn-print");
 print.bind();

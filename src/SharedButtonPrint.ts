@@ -1,9 +1,10 @@
 import AbstractSharedbutton from './AbstractSharedButton';
+import IEventHandler from './IEventHandler';
 
 export default class SharedButtonPrint extends AbstractSharedbutton {
 
-    constructor(className: string) {
-        super(className)
+    constructor(eventHandler: IEventHandler, className: string) {
+        super(eventHandler, className)
     }
 
     createAction() {
